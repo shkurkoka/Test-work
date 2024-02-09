@@ -1,0 +1,255 @@
+@media screen and (min-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    :root {
+        --special-text: #0eff00;
+        --color-smoke: whitesmoke;
+        --text-color: black;
+        --color-gray: dimgray;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        font-family: 'Roboto';
+        font-size: 16px;
+        color: var(--text-color);
+    }
+
+    .main-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 30px;
+    }
+
+    .title {
+        font-size: 26px;
+        font-weight: 600;
+        font-family: sans-serif;
+        color: var(--special-text);
+        text-transform: uppercase;
+    }
+
+    .block1 {
+        width: 768px;
+        background-color: var(--color-smoke);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .content-part {
+        width: 372px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .product-title {}
+
+    .button {
+        cursor: pointer;
+        width: 220px;
+        height: 30px;
+
+        background-color: #189ad3;
+        font-size: 15px;
+        color: var(--color-smoke);
+
+        border-radius: 25px;
+        border: none;
+        transition-duration: 0.5s;
+    }
+
+    .button:hover,
+    .button:focus {
+        background-color: #007AFF;
+        color: var(--text-color);
+    }
+
+    .img-part {
+        width: 372px;
+        height: auto;
+    }
+
+    /* BLOCK2 */
+
+    .block2 {
+        width: 768px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 20px;
+    }
+
+    .head-block {
+        background-color: var(--color-gray);
+        width: 768px;
+        padding: 5px;
+    }
+
+    .head-block-title {
+        text-align: center;
+    }
+
+    .size-list {
+        display: flex;
+        flex-direction: row;
+
+        gap: 20px;
+    }
+
+    .radio-button {
+        display: none;
+    }
+
+    .radio-button:checked~* .letter {
+        font-size: 66px;
+        color: var(--text-color);
+    }
+
+    .radio-button:checked~* .size-text {
+        color: var(--special-text);
+    }
+
+    .size-item {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-smoke);
+        border-radius: 1px;
+    }
+
+    .item-text-wrap {
+        width: 160px;
+        height: 95px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .letter {
+        font-size: 60px;
+        font-weight: 900;
+        font-family: sans-serif;
+        color: var(--special-text);
+        transition-duration: 0.5s;
+    }
+
+    .size-text {
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--text-color);
+        transition-duration: 0.5s;
+    }
+
+    /* BLOCK3 */
+
+    .block3 {
+        width: 768px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: var(--color-smoke);
+
+        gap: 20px;
+    }
+
+    .variants-list {
+        height: 332px;
+        display: flex;
+        flex-direction: row;
+
+        gap: 25px;
+    }
+
+    .radio-button:checked~* .variant-img {
+        width: 105%;
+        height: auto;
+    }
+
+    .radio-button:checked~* .variant-name {
+        font-size: 30px;
+    }
+
+    .radio-button:checked~.num {
+        background-color: var(--text-color);
+        color: gold;
+    }
+
+    .variant-item {
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+    }
+
+    .variant-item-text-wrap {
+        width: 236px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        cursor: pointer;
+        gap: 7px;
+    }
+
+    .num {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+
+        background-color: gold;
+        color: var(--text-color);
+        font-size: 40px;
+        font-weight: 600;
+
+        position: absolute;
+        top: 158px;
+        left: 100px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition-duration: 0.5s;
+    }
+
+    .variant-name {
+        font-size: 26px;
+        font-weight: 600;
+        font-family: sans-serif;
+        color: var(--text-color);
+        text-transform: uppercase;
+        text-align: center;
+
+        transition-duration: 0.5s;
+    }
+
+    .variant-img {
+        width: 100%;
+        height: auto;
+
+        transition-duration: 0.5s;
+    }
+}

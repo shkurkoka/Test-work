@@ -1,0 +1,255 @@
+@media screen and (min-width: 1200px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    :root {
+        --special-text: #0eff00;
+        --color-smoke: whitesmoke;
+        --text-color: black;
+        --color-gray: dimgray;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        font-family: 'Roboto';
+        font-size: 18px;
+        color: var(--text-color);
+    }
+
+    .main-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 40px;
+    }
+
+    .title {
+        font-size: 30px;
+        font-weight: 600;
+        font-family: sans-serif;
+        color: var(--special-text);
+        text-transform: uppercase;
+    }
+
+    .block1 {
+        width: 1200px;
+        background-color: var(--color-smoke);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        padding: 10px;
+        gap: 136px;
+    }
+
+    .content-part {
+        width: 472px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .product-title {}
+
+    .button {
+        cursor: pointer;
+        width: 220px;
+        height: 40px;
+
+        background-color: #189ad3;
+        font-size: 15px;
+        color: var(--color-smoke);
+
+        border-radius: 25px;
+        border: none;
+        transition-duration: 0.5s;
+    }
+
+    .button:hover,
+    .button:focus {
+        background-color: #007AFF;
+        color: var(--text-color);
+    }
+
+    .img-part {
+        width: 572px;
+        height: auto;
+    }
+
+    /* BLOCK2 */
+
+    .block2 {
+        width: 1200px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 20px;
+    }
+
+    .head-block {
+        background-color: var(--color-gray);
+        width: 1200px;
+        padding: 5px;
+    }
+
+    .head-block-title {
+        text-align: center;
+    }
+
+    .size-list {
+        display: flex;
+        flex-direction: row;
+
+        gap: 20px;
+    }
+
+    .radio-button {
+        display: none;
+    }
+
+    .radio-button:checked~* .letter {
+        font-size: 88px;
+        color: var(--text-color);
+    }
+
+    .radio-button:checked~* .size-text {
+        color: var(--special-text);
+    }
+
+    .size-item {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-smoke);
+        border-radius: 1px;
+    }
+
+    .item-text-wrap {
+        width: 275px;
+        height: 125px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .letter {
+        font-size: 80px;
+        font-weight: 900;
+        font-family: sans-serif;
+        color: var(--special-text);
+        transition-duration: 0.5s;
+    }
+
+    .size-text {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--text-color);
+        transition-duration: 0.5s;
+    }
+
+    /* BLOCK3 */
+
+    .block3 {
+        width: 1200px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: var(--color-smoke);
+
+        gap: 20px;
+    }
+
+    .variants-list {
+        height: 332px;
+        display: flex;
+        flex-direction: row;
+
+        gap: 25px;
+    }
+
+    .radio-button:checked~* .variant-img {
+        width: 105%;
+        height: auto;
+    }
+
+    .radio-button:checked~* .variant-name {
+        font-size: 30px;
+    }
+
+    .radio-button:checked~.num {
+        background-color: var(--text-color);
+        color: gold;
+    }
+
+    .variant-item {
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+    }
+
+    .variant-item-text-wrap {
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        cursor: pointer;
+        gap: 7px;
+    }
+
+    .num {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+
+        background-color: gold;
+        color: var(--text-color);
+        font-size: 55px;
+        font-weight: 600;
+
+        position: absolute;
+        top: 240px;
+        left: 160px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition-duration: 0.5s;
+    }
+
+    .variant-name {
+        font-size: 26px;
+        font-weight: 600;
+        font-family: sans-serif;
+        color: var(--text-color);
+        text-transform: uppercase;
+        text-align: center;
+
+        transition-duration: 0.5s;
+    }
+
+    .variant-img {
+        width: 100%;
+        height: auto;
+
+        transition-duration: 0.5s;
+    }
+}

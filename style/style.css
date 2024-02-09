@@ -1,0 +1,259 @@
+@media screen and (min-width: 1400px){
+    * {
+        box-sizing: border-box;
+    }
+
+    :root {
+        --special-text: #0eff00;
+        --color-smoke: whitesmoke;
+        --text-color: black;
+        --color-gray: dimgray;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        font-family: 'Roboto';
+        font-size: 16px;
+        color: var(--text-color);
+    }
+    
+    .main-wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        gap: 60px;
+    }
+
+    .title {
+        font-size: 32px;
+        font-weight: 600;
+        font-family: sans-serif;
+        color: var(--special-text);
+        text-transform: uppercase;
+    }
+
+
+    .block1{
+        width: 100%;
+        background-color: var(--color-smoke);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        padding: 20px;
+        gap: 5%;
+    }
+
+    .content-part{
+        width: 40%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .description{
+        font-size: 18px;
+    }
+
+    .button{
+        cursor: pointer;
+        width: 230px;
+        height: 40px;
+
+        background-color: #189ad3;
+        color: var(--color-smoke);
+
+        border-radius: 25px;
+        border: none;
+        transition-duration: 0.5s;
+    }
+
+    .button:hover, .button:focus{
+        background-color: #007AFF;
+        color: var(--text-color);
+    }
+
+    .img-part{
+        width: 30%;
+    }
+
+    /* BLOCK2 */
+
+    .block2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        gap: 40px;
+    }
+
+    .head-block{
+        background-color: var(--color-gray);
+        width: 100%;
+        padding: 15px;
+    }
+
+    .head-block-title{
+        font-size: 32px;
+        font-weight: 600;
+        font-family: sans-serif;
+        color: var(--special-text);
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .size-list{
+        display: flex;
+        flex-direction: row;
+        
+        gap: 30px;
+    }
+
+    .radio-button{
+        display: none;
+    }
+
+    .radio-button:checked ~ * .letter{
+        font-size: 110px;
+        color: var(--text-color);
+    }
+
+    .radio-button:checked~* .size-text {
+        color: var(--special-text);
+    }
+
+    .size-item{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-smoke);
+    }
+
+    .item-text-wrap{
+        width: 315px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .letter{
+        font-size: 100px;
+        font-weight: 900;
+        font-family: sans-serif;
+        color: var(--special-text);
+        transition-duration: 0.5s;
+    }
+
+    .size-text{
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--text-color);
+        transition-duration: 0.5s;
+    }
+
+    /* BLOCK3 */
+
+    .block3{
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: var(--color-smoke);
+
+        gap: 40px;
+    }
+
+    .variants-list {
+        height: 450px;
+
+        display: flex;
+        flex-direction: row;
+
+        gap: 20px;
+    }
+
+    .radio-button:checked~* .variant-img {
+        width: 105%;
+        height: auto;
+    }
+
+    .radio-button:checked~* .variant-name {
+        font-size: 35px;
+    }
+
+    .radio-button:checked~ .num {
+        background-color: var(--text-color);
+        color: gold;
+    }
+
+    .variant-item {
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+    }
+
+    .variant-item-text-wrap {
+        width: 440px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        cursor: pointer;
+        gap: 15px;
+    }
+
+    .num{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+
+        background-color: gold;
+        color: var(--text-color);
+        font-size: 55px;
+        font-weight: 600;
+
+        position: absolute;
+        top: 300px;
+        left: 195px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition-duration: 0.5s;
+    }
+
+    .variant-name{
+        font-size: 32px;
+        font-weight: 600;
+        font-family: sans-serif;
+        color: var(--text-color);
+        text-transform: uppercase;
+        text-align: center;
+        
+        transition-duration: 0.5s;
+    }
+
+    .variant-img{
+        width: 100%;
+        height: auto;
+
+        transition-duration: 0.5s;
+    }
+}
